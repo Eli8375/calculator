@@ -10,31 +10,28 @@ body {
 }
 
 .calculator {
-    border: black 2px dashed;
     background-color: white;
     margin: 1px;
     padding: 1px;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(1, 300px);
-    grid-template-rows: 75px 300px
+    grid-template-columns: repeat(1, 450px);
+    grid-template-rows: 100px 500px
 }
 
 .screen-area {
     display: flex;
-    border: white 2px dashed;
     margin: 5px;
     padding: 10px;
     background-color: rgba(0, 0, 0, .75);
     justify-content: end;
     align-items: center;
     color: white;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .button-area {
-    border: black 2px dashed;
     margin: 3px;
     padding: 3px;
     display: grid;
@@ -53,10 +50,6 @@ button {
     background-color: beige;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255);
-}
-
 .operator {
     background-color: grey;
 }
@@ -65,14 +58,15 @@ button:hover {
     background-color: grey;
 }
 
-#clear {
-    grid-column: span 2;
-}
-
 #equals {
     grid-row: span 2;
 }
 
 #zero {
-    grid-column: span 3;
+    grid-column: span 2;
+}
+
+
+button:hover {
+    background-color: rgb(193, 14, 14);
 }
