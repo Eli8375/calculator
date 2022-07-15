@@ -3,16 +3,16 @@
 }
 
 body {
-    background-color: blanchedalmond;
     display: grid;
     align-content: center;
     justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(194, 173, 141);
 }
 
 .calculator {
-    background-color: white;
-    margin: 1px;
-    padding: 1px;
+    background-color: brown;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -22,7 +22,6 @@ body {
 
 .screen-area {
     display: flex;
-    margin: 5px;
     padding: 10px;
     background-color: rgba(0, 0, 0, .75);
     justify-content: end;
@@ -32,8 +31,6 @@ body {
 }
 
 .button-area {
-    margin: 3px;
-    padding: 3px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: lightblue;
@@ -41,7 +38,7 @@ body {
 }
 
 button {
-    border: white 1px solid;
+    border: rgb(0, 195, 255) 1px solid;
     font-size: larger;
     outline: none;
 }
@@ -51,11 +48,11 @@ button {
 }
 
 .operator {
-    background-color: grey;
+    background-color: rgb(131, 73, 32);
 }
 
 .misc {
-    background-color: grey;
+    background-color: rgb(131, 73, 32);
 }
 
 #equals {
@@ -66,7 +63,14 @@ button {
     grid-column: span 2;
 }
 
-
 button:hover {
     background-color: rgb(193, 14, 14);
+}
+
+button.operator:focus {
+    background-color: red;
+}
+
+button.misc:active, button.number:active {
+    background-color: red;
 }
